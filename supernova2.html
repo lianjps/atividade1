@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ultimate.css">
+    <title> Html feroz </title>
+</head>
+
+<body>
+
+    <main>
+
+        <body>
+
+            <!-- Floating Action Button -->
+            <a href="#" class="fab">
+                <span>+</span>
+            </a>
+
+            <!-- Navigation Drawer Button -->
+            <div class="nav-drawer-btn" onclick="toggleDrawer()">
+                &#9776; <!-- Menu Icon -->
+            </div>
+
+            <!-- Navigation Drawer -->
+            <div id="navDrawer" class="nav-drawer">
+                <a href="#" class="close-btn" onclick="toggleDrawer()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <script>
+                function toggleDrawer() {
+                    var drawer = document.getElementById('navDrawer');
+                    drawer.classList.toggle('open');
+                }
+            </script>
+
+            <!-- Lista Desordenada (Unordered List) -->
+            <h2>Lista Desordenada</h2>
+            <ul class="custom-list unordered-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+
+            <!-- Lista Ordenada (Ordered List) -->
+            <h2>Lista Ordenada</h2>
+            <ol class="custom-list ordered-list">
+                <li>Passo 1</li>
+                <li>Passo 2</li>
+                <li>Passo 3</li>
+                <li>Passo 4</li>
+            </ol>
+
+            <!-- Formulário Animado -->
+            <h2>Formulário Animado</h2>
+            <form class="animated-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Formulário Responsivo -->
+
+            <h2>Formulário Responsivo</h2>
+            <form class="responsive-form">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+
+                    <label for="first-name">Primeiro Nome:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Último Nome:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="dob">Data de Nascimento:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Gênero:</label>
+                    <select id="gender" name="gender">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+    </main>
+</body>
+
+</html>
